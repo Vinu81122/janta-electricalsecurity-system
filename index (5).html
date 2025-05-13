@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Janta Electrical &amp; Security System
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white shadow">
+   <nav aria-label="Primary Navigation" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a class="flex items-center space-x-2" href="#home">
+     <img alt="Janta Electrical &amp; Security System logo, stylized letters JES in blue and yellow" class="h-12 w-12" height="48" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4f830795-9209-418d-39aa-a908bc8ac0e7.jpg" width="48"/>
+     <span class="font-bold text-xl text-blue-700 tracking-wide">
+      Janta Electrical &amp; Security
+     </span>
+    </a>
+    <button aria-expanded="false" aria-label="Toggle menu" class="sm:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" id="nav-toggle">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+    <ul class="hidden sm:flex space-x-8 text-gray-700 font-semibold" id="nav-menu" role="menubar">
+     <li role="none">
+      <a class="hover:text-blue-700 focus:outline-none focus:text-blue-700" href="#home" role="menuitem">
+       Home
+      </a>
+     </li>
+     <li role="none">
+      <a class="hover:text-blue-700 focus:outline-none focus:text-blue-700" href="#about" role="menuitem">
+       About Us
+      </a>
+     </li>
+     <li class="relative group" role="none">
+      <button aria-expanded="false" aria-haspopup="true" class="hover:text-blue-700 focus:outline-none focus:text-blue-700 font-semibold flex items-center space-x-1">
+       <span>
+        Services
+       </span>
+       <i class="fas fa-chevron-down text-xs">
+       </i>
+      </button>
+      <ul aria-label="Services submenu" class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 invisible group-hover:visible group-focus-within:visible transition-opacity duration-200" role="menu">
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#services" role="menuitem">
+         Installation
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#services" role="menuitem">
+         Repair &amp; Maintenance
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#services" role="menuitem">
+         Upgrades &amp; Replacements
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#services" role="menuitem">
+         CCTV, Alarms &amp; Video Door Phones
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="relative group" role="none">
+      <button aria-expanded="false" aria-haspopup="true" class="hover:text-blue-700 focus:outline-none focus:text-blue-700 font-semibold flex items-center space-x-1">
+       <span>
+        Appliance Categories
+       </span>
+       <i class="fas fa-chevron-down text-xs">
+       </i>
+      </button>
+      <ul aria-label="Appliance Categories submenu" class="absolute left-0 mt-2 w-56 max-h-96 overflow-y-auto bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 invisible group-hover:visible group-focus-within:visible transition-opacity duration-200" role="menu">
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#appliances" role="menuitem">
+         Refrigeration Appliances
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#appliances" role="menuitem">
+         Cooking Appliances
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#appliances" role="menuitem">
+         Washing &amp; Drying Appliances
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#appliances" role="menuitem">
+         Heating &amp; Cooling Appliances
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#appliances" role="menuitem">
+         Kitchen Appliances
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#appliances" role="menuitem">
+         Other Home Appliances
+        </a>
+       </li>
+       <li role="none">
+        <a class="block px-4 py-2 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none" href="#appliances" role="menuitem">
+         Miscellaneous Appliances
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li role="none">
+      <a class="hover:text-blue-700 focus:outline-none focus:text-blue-700" href="#contact" role="menuitem">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 px-6 sm:px-12 md:px-20" id="home">
+   <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center md:space-x-12">
+    <div class="w-full md:w-1/2 text-center md:text-left">
+     <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+      Your One-Stop Solution for Home Appliance Repair &amp; Service
+     </h1>
+     <p class="text-lg sm:text-xl mb-8 max-w-lg mx-auto md:mx-0">
+      We provide expert repair, installation, and maintenance services for a
+          wide range of home appliances. Fast, reliable, and affordable service
+          at your doorstep.
+     </p>
+     <a class="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded shadow-lg focus:outline-none focus:ring-4 focus:ring-yellow-300 transition" href="#contact">
+      Contact Us Today
+     </a>
+    </div>
+    <div class="w-full md:w-1/2 mb-10 md:mb-0">
+     <img alt="Illustration of a technician repairing home appliances with tools and security devices around" class="rounded-lg shadow-lg mx-auto max-w-full h-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e02dd452-4e4c-4f28-fd0b-166350300960.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Contact & Tagline Banner -->
+  <section class="bg-white py-8 border-b border-gray-200">
+   <div class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+    <div class="text-center md:text-left space-y-1">
+     <h2 class="text-2xl font-bold text-blue-700 flex items-center justify-center md:justify-start space-x-2">
+      <i class="fas fa-shield-alt text-yellow-500">
+      </i>
+      <span>
+       JANTA ELECTRICAL &amp; SECURITY SYSTEM
+      </span>
+      <i class="fas fa-bolt text-yellow-400">
+      </i>
+     </h2>
+     <p class="text-gray-700 font-semibold">
+      Your Trusted Partner in Home Security &amp; Electrical Solutions
+     </p>
+     <address class="not-italic text-gray-600 text-sm mt-1">
+      📍 Shop No. B15, Nangal Road, Rajawas Puliya, Sikar Road, Jaipur
+     </address>
+    </div>
+    <div class="text-center md:text-right space-y-1">
+     <p class="font-semibold text-gray-700">
+      📞 Contact Us Today!
+     </p>
+     <p class="text-blue-700 font-bold text-lg flex items-center justify-center md:justify-end space-x-4">
+      <a aria-label="Call mobile number 8690904099" class="hover:underline flex items-center space-x-2" href="tel:8690904099">
+       <i class="fas fa-mobile-alt">
+       </i>
+       <span>
+        8690904099
+       </span>
+      </a>
+     </p>
+     <p class="text-blue-700 font-bold text-lg flex items-center justify-center md:justify-end space-x-4">
+      <a aria-label="Call mobile number 9352513641" class="hover:underline flex items-center space-x-2" href="tel:9352513641">
+       <i class="fas fa-mobile-alt">
+       </i>
+       <span>
+        9352513641
+       </span>
+      </a>
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Social & Call Now Buttons -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-6 bg-white border-b border-gray-200 flex flex-wrap justify-end gap-6">
+   <a aria-label="WhatsApp chat with 9352513641" class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded shadow focus:outline-none focus:ring-4 focus:ring-green-300 transition" href="https://wa.me/919352513641" rel="noopener" target="_blank">
+    <i class="fab fa-whatsapp fa-lg">
+    </i>
+    <span>
+     WhatsApp
+    </span>
+   </a>
+   <a aria-label="Instagram profile @shivsecuritysystem" class="flex items-center space-x-2 bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded shadow focus:outline-none focus:ring-4 focus:ring-pink-300 transition" href="https://instagram.com/shivsecuritysystem" rel="noopener" target="_blank">
+    <i class="fab fa-instagram fa-lg">
+    </i>
+    <span>
+     Instagram
+    </span>
+   </a>
+   <a aria-label="Facebook page" class="flex items-center space-x-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded shadow focus:outline-none focus:ring-4 focus:ring-blue-400 transition" href="https://facebook.com/shivsecuritysystem" rel="noopener" target="_blank">
+    <i class="fab fa-facebook-f fa-lg">
+    </i>
+    <span>
+     Facebook
+    </span>
+   </a>
+   <a aria-label="Google Maps location" class="flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded shadow focus:outline-none focus:ring-4 focus:ring-red-300 transition" href="https://www.google.com/maps/search/?api=1&amp;query=Shop+No.+B15,+Nangal+Road,+Rajawas+Puliya,+Sikar+Road,+Jaipur" rel="noopener" target="_blank">
+    <i class="fas fa-map-marker-alt fa-lg">
+    </i>
+    <span>
+     Google Maps
+    </span>
+   </a>
+   <a aria-label="Call now 9352513641" class="flex items-center space-x-2 bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded shadow focus:outline-none focus:ring-4 focus:ring-blue-500 transition" href="tel:9352513641">
+    <i class="fas fa-phone-alt fa-lg">
+    </i>
+    <span>
+     Call Now
+    </span>
+   </a>
+  </section>
+  <!-- About Us -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-16 bg-white" id="about">
+   <h2 class="text-3xl font-extrabold text-blue-800 mb-6 text-center">
+    Welcome to Janta Electrical and Security System
+   </h2>
+   <p class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed text-center">
+    At Janta Electrical Service, we specialize in repairing and servicing a
+      full range of household electrical appliances. With a team of experienced
+      technicians, we ensure your home runs smoothly, efficiently, and without
+      disruption. Our goal is to deliver prompt and trustworthy service at the
+      most competitive rates.
+   </p>
+  </section>
+  <!-- Our Services -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-16 bg-gray-50" id="services">
+   <h2 class="text-3xl font-extrabold text-blue-800 mb-10 text-center">
+    Our Services
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+     <img alt="Icon representing installation service with tools and gear" class="mb-4" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4a39fe05-a840-4cdb-e663-2e3adf6cce1d.jpg" width="96"/>
+     <h3 class="font-semibold text-lg text-blue-700 mb-2">
+      Installation
+     </h3>
+     <p class="text-gray-600 text-sm">
+      Professional installation of home security systems and electrical
+          appliances.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+     <img alt="Icon representing repair service with wrench and screwdriver" class="mb-4" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e26d2828-a39f-4829-0e29-338624e0518f.jpg" width="96"/>
+     <h3 class="font-semibold text-lg text-blue-700 mb-2">
+      Repair &amp; Maintenance
+     </h3>
+     <p class="text-gray-600 text-sm">
+      Reliable repair and maintenance services to keep your appliances
+          running smoothly.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+     <img alt="Icon representing system upgrades with arrows and gear" class="mb-4" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d123f194-987c-4646-ca26-7921ee686c0a.jpg" width="96"/>
+     <h3 class="font-semibold text-lg text-blue-700 mb-2">
+      System Upgrades &amp; Replacements
+     </h3>
+     <p class="text-gray-600 text-sm">
+      Upgrade or replace your existing systems with the latest technology.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+     <img alt="Icon representing CCTV cameras and alarm system" class="mb-4" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a80cd3fa-37cf-4c80-bf3a-3c2aad46bc05.jpg" width="96"/>
+     <h3 class="font-semibold text-lg text-blue-700 mb-2">
+      CCTV, Alarms &amp; Video Door Phones
+     </h3>
+     <p class="text-gray-600 text-sm">
+      Installation and servicing of CCTV, alarms, and video door phone
+          systems.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Appliance Categories -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-16 bg-white" id="appliances">
+   <h2 class="text-3xl font-extrabold text-blue-800 mb-10 text-center">
+    Appliance Categories
+   </h2>
+   <div class="space-y-12 max-w-5xl mx-auto">
+    <!-- 01 Refrigeration Appliances -->
+    <div>
+     <h3 class="text-2xl font-bold text-yellow-600 mb-3">
+      01. Refrigeration Appliances
+     </h3>
+     <ul class="list-disc list-inside text-gray-700 space-y-1">
+      <li>
+       Freezers
+      </li>
+      <li>
+       Refrigerators
+      </li>
+      <li>
+       Water Coolers
+      </li>
+      <li>
+       Ice Makers
+      </li>
+     </ul>
+    </div>
+    <!-- 02 Cooking Appliances -->
+    <div>
+     <h3 class="text-2xl font-bold text-yellow-600 mb-3">
+      02. Cooking Appliances
+     </h3>
+     <ul class="list-disc list-inside text-gray-700 space-y-1">
+      <li>
+       Kitchen Stoves
+      </li>
+      <li>
+       Rice Cookers
+      </li>
+      <li>
+       Roti Makers
+      </li>
+      <li>
+       Steamer Ovens
+      </li>
+      <li>
+       Microwaves
+      </li>
+     </ul>
+    </div>
+    <!-- 03 Washing & Drying Appliances -->
+    <div>
+     <h3 class="text-2xl font-bold text-yellow-600 mb-3">
+      03. Washing &amp; Drying Appliances
+     </h3>
+     <ul class="list-disc list-inside text-gray-700 space-y-1">
+      <li>
+       Washing Machines
+      </li>
+      <li>
+       Clothes Dryers
+      </li>
+      <li>
+       Drying Cabinets
+      </li>
+      <li>
+       Dishwashers
+      </li>
+     </ul>
+    </div>
+    <!-- 04 Heating & Cooling Appliances -->
+    <div>
+     <h3 class="text-2xl font-bold text-yellow-600 mb-3">
+      04. Heating &amp; Cooling Appliances
+     </h3>
+     <ul class="list-disc list-inside text-gray-700 space-y-1">
+      <li>
+       Air Conditioners
+      </li>
+      <li>
+       Fans
+      </li>
+      <li>
+       Coolers
+      </li>
+      <li>
+       Radiators
+      </li>
+      <li>
+       Water Heaters
+      </li>
+     </ul>
+    </div>
+    <!-- 05 Kitchen Appliances -->
+    <div>
+     <h3 class="text-2xl font-bold text-yellow-600 mb-3">
+      05. Kitchen Appliances
+     </h3>
+     <ul class="list-disc list-inside text-gray-700 space-y-1">
+      <li>
+       Coffee Makers
+      </li>
+      <li>
+       Blenders
+      </li>
+      <li>
+       Mixers
+      </li>
+      <li>
+       Toasters
+      </li>
+      <li>
+       Crock Pots
+      </li>
+      <li>
+       Water Purifiers
+      </li>
+      <li>
+       Kitchen Hoods
+      </li>
+      <li>
+       Food Processors
+      </li>
+      <li>
+       Deep Fryers
+      </li>
+      <li>
+       Air Fryers
+      </li>
+      <li>
+       Food Dehydrators
+      </li>
+     </ul>
+    </div>
+    <!-- 06 Other Home Appliances -->
+    <div>
+     <h3 class="text-2xl font-bold text-yellow-600 mb-3">
+      06. Other Home Appliances
+     </h3>
+     <ul class="list-disc list-inside text-gray-700 space-y-1">
+      <li>
+       Iron Presses / Clothing Irons
+      </li>
+      <li>
+       Electric Drills
+      </li>
+      <li>
+       Kettles
+      </li>
+      <li>
+       Vacuum Cleaners
+      </li>
+      <li>
+       Electric Fans
+      </li>
+      <li>
+       Televisions
+      </li>
+     </ul>
+    </div>
+    <!-- 07 Miscellaneous Appliances -->
+    <div>
+     <h3 class="text-2xl font-bold text-yellow-600 mb-3">
+      07. Miscellaneous Appliances
+     </h3>
+     <ul class="list-disc list-inside text-gray-700 space-y-1">
+      <li>
+       Lamps
+      </li>
+      <li>
+       Lightbulbs
+      </li>
+      <li>
+       Lanterns
+      </li>
+      <li>
+       Torches
+      </li>
+      <li>
+       Evaporative Coolers
+      </li>
+      <li>
+       Humidifiers
+      </li>
+      <li>
+       Air Purifiers
+      </li>
+      <li>
+       Waffle Irons
+      </li>
+      <li>
+       Bread Machines
+      </li>
+      <li>
+       Popcorn Machines
+      </li>
+      <li>
+       Panini Makers
+      </li>
+      <li>
+       Smart Home Tech
+      </li>
+     </ul>
+    </div>
+   </div>
+  </section>
+  <!-- Why Choose Us -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-16 bg-blue-50" id="why-choose">
+   <h2 class="text-3xl font-extrabold text-blue-800 mb-10 text-center">
+    Why Choose Us?
+   </h2>
+   <ul class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-gray-700">
+    <li class="flex items-start space-x-3">
+     <i class="fas fa-check-circle text-green-600 text-2xl mt-1">
+     </i>
+     <span class="text-lg font-semibold">
+      Certified and experienced technicians
+     </span>
+    </li>
+    <li class="flex items-start space-x-3">
+     <i class="fas fa-check-circle text-green-600 text-2xl mt-1">
+     </i>
+     <span class="text-lg font-semibold">
+      Same-day service available
+     </span>
+    </li>
+    <li class="flex items-start space-x-3">
+     <i class="fas fa-check-circle text-green-600 text-2xl mt-1">
+     </i>
+     <span class="text-lg font-semibold">
+      Genuine spare parts
+     </span>
+    </li>
+    <li class="flex items-start space-x-3">
+     <i class="fas fa-check-circle text-green-600 text-2xl mt-1">
+     </i>
+     <span class="text-lg font-semibold">
+      Transparent pricing
+     </span>
+    </li>
+    <li class="flex items-start space-x-3">
+     <i class="fas fa-check-circle text-green-600 text-2xl mt-1">
+     </i>
+     <span class="text-lg font-semibold">
+      Customer satisfaction guaranteed
+     </span>
+    </li>
+   </ul>
+  </section>
+  <!-- Service Booking Form -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-16 bg-white" id="contact">
+   <h2 class="text-3xl font-extrabold text-blue-800 mb-10 text-center">
+    Book a Service or Request Repair
+   </h2>
+   <form action="#" aria-label="Service booking form" class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md" method="POST">
+    <div class="mb-6">
+     <label class="block mb-2 font-semibold text-gray-700" for="name">
+      Full Name
+     </label>
+     <input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+    </div>
+    <div class="mb-6">
+     <label class="block mb-2 font-semibold text-gray-700" for="email">
+      Email Address
+     </label>
+     <input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+    </div>
+    <div class="mb-6">
+     <label class="block mb-2 font-semibold text-gray-700" for="phone">
+      Mobile Number
+     </label>
+     <input class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="phone" name="phone" pattern="[0-9]{10}" placeholder="8690904099" required="" title="Enter a 10-digit mobile number" type="tel"/>
+    </div>
+    <div class="mb-6">
+     <label class="block mb-2 font-semibold text-gray-700" for="appliance">
+      Select Appliance
+     </label>
+     <select class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="appliance" name="appliance" required="">
+      <option disabled="" selected="" value="">
+       Select an appliance
+      </option>
+      <optgroup label="Refrigeration Appliances">
+       <option>
+        Freezers
+       </option>
+       <option>
+        Refrigerators
+       </option>
+       <option>
+        Water Coolers
+       </option>
+       <option>
+        Ice Makers
+       </option>
+      </optgroup>
+      <optgroup label="Cooking Appliances">
+       <option>
+        Kitchen Stoves
+       </option>
+       <option>
+        Rice Cookers
+       </option>
+       <option>
+        Roti Makers
+       </option>
+       <option>
+        Steamer Ovens
+       </option>
+       <option>
+        Microwaves
+       </option>
+      </optgroup>
+      <optgroup label="Washing &amp; Drying Appliances">
+       <option>
+        Washing Machines
+       </option>
+       <option>
+        Clothes Dryers
+       </option>
+       <option>
+        Drying Cabinets
+       </option>
+       <option>
+        Dishwashers
+       </option>
+      </optgroup>
+      <optgroup label="Heating &amp; Cooling Appliances">
+       <option>
+        Air Conditioners
+       </option>
+       <option>
+        Fans
+       </option>
+       <option>
+        Coolers
+       </option>
+       <option>
+        Radiators
+       </option>
+       <option>
+        Water Heaters
+       </option>
+      </optgroup>
+      <optgroup label="Kitchen Appliances">
+       <option>
+        Coffee Makers
+       </option>
+       <option>
+        Blenders
+       </option>
+       <option>
+        Mixers
+       </option>
+       <option>
+        Toasters
+       </option>
+       <option>
+        Crock Pots
+       </option>
+       <option>
+        Water Purifiers
+       </option>
+       <option>
+        Kitchen Hoods
+       </option>
+       <option>
+        Food Processors
+       </option>
+       <option>
+        Deep Fryers
+       </option>
+       <option>
+        Air Fryers
+       </option>
+       <option>
+        Food Dehydrators
+       </option>
+      </optgroup>
+      <optgroup label="Other Home Appliances">
+       <option>
+        Iron Presses / Clothing Irons
+       </option>
+       <option>
+        Electric Drills
+       </option>
+       <option>
+        Kettles
+       </option>
+       <option>
+        Vacuum Cleaners
+       </option>
+       <option>
+        Electric Fans
+       </option>
+       <option>
+        Televisions
+       </option>
+      </optgroup>
+      <optgroup label="Miscellaneous Appliances">
+       <option>
+        Lamps
+       </option>
+       <option>
+        Lightbulbs
+       </option>
+       <option>
+        Lanterns
+       </option>
+       <option>
+        Torches
+       </option>
+       <option>
+        Evaporative Coolers
+       </option>
+       <option>
+        Humidifiers
+       </option>
+       <option>
+        Air Purifiers
+       </option>
+       <option>
+        Waffle Irons
+       </option>
+       <option>
+        Bread Machines
+       </option>
+       <option>
+        Popcorn Machines
+       </option>
+       <option>
+        Panini Makers
+       </option>
+       <option>
+        Smart Home Tech
+       </option>
+      </optgroup>
+     </select>
+    </div>
+    <div class="mb-6">
+     <label class="block mb-2 font-semibold text-gray-700" for="issue">
+      Describe the Issue
+     </label>
+     <textarea class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="issue" name="issue" placeholder="Please describe the problem or service you require" required="" rows="4"></textarea>
+    </div>
+    <div class="text-center">
+     <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded shadow focus:outline-none focus:ring-4 focus:ring-blue-400 transition" type="submit">
+      Submit Request
+     </button>
+    </div>
+   </form>
+  </section>
+  <!-- Accessibility, Responsive & Navigation Info -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 py-16 bg-gray-100 rounded-lg shadow-inner">
+   <h2 class="text-3xl font-extrabold text-blue-800 mb-10 text-center">
+    Our Commitment to You
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto text-gray-700">
+    <div>
+     <h3 class="text-xl font-semibold mb-4 flex items-center space-x-2 text-blue-700">
+      <i class="fas fa-globe-americas text-yellow-500">
+      </i>
+      <span>
+       Universal Accessibility
+      </span>
+     </h3>
+     <ul class="list-disc list-inside space-y-1">
+      <li>
+       Large, readable fonts and high contrast colors
+      </li>
+      <li>
+       Keyboard navigability and screen reader support
+      </li>
+      <li>
+       Alt text for all images
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 flex items-center space-x-2 text-blue-700">
+      <i class="fas fa-mobile-alt text-yellow-500">
+      </i>
+      <span>
+       Responsive Design
+      </span>
+     </h3>
+     <ul class="list-disc list-inside space-y-1">
+      <li>
+       Works seamlessly on phones, tablets, and desktops
+      </li>
+      <li>
+       Touch-friendly buttons and menus
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 flex items-center space-x-2 text-blue-700">
+      <i class="fas fa-compass text-yellow-500">
+      </i>
+      <span>
+       Simple, Intuitive Navigation
+      </span>
+     </h3>
+     <ul class="list-disc list-inside space-y-1">
+      <li>
+       Clear top menu with dropdowns for easy access
+      </li>
+      <li>
+       Sticky navbar to stay accessible while scrolling
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto mt-12 text-gray-700">
+    <div>
+     <h3 class="text-xl font-semibold mb-4 flex items-center space-x-2 text-blue-700">
+      <i class="fas fa-phone-alt text-yellow-500">
+      </i>
+      <span>
+       Easy Contact &amp; Support
+      </span>
+     </h3>
+     <ul class="list-disc list-inside space-y-1">
+      <li>
+       One-tap call/email buttons for mobile users
+      </li>
+      <li>
+       Live chat or quick inquiry form
+      </li>
+      <li>
+       Multilingual support available
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 flex items-center space-x-2 text-blue-700">
+      <i class="fas fa-book text-yellow-500">
+      </i>
+      <span>
+       Trust &amp; Clarity
+      </span>
+     </h3>
+     <ul class="list-disc list-inside space-y-1">
+      <li>
+       Testimonials and service guarantees
+      </li>
+      <li>
+       “How it works” sections or explainer videos
+      </li>
+      <li>
+       Icons and visuals to support text
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-semibold mb-4 flex items-center space-x-2 text-blue-700">
+      <i class="fas fa-tools text-yellow-500">
+      </i>
+      <span>
+       Service Booking or Request Form
+      </span>
+     </h3>
+     <ul class="list-disc list-inside space-y-1">
+      <li>
+       Simple online form for repair requests
+      </li>
+      <li>
+       Dropdown menus to select appliance and issue
+      </li>
+     </ul>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-gray-300 py-8 mt-16">
+   <div class="max-w-7xl mx-auto px-6 sm:px-12 md:px-20 text-center text-sm">
+    © 2025 Janta Electrical AND SECURITY Service. All Rights Reserved.
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      const expanded =
+        navToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+      navToggle.setAttribute('aria-expanded', expanded);
+      navMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
